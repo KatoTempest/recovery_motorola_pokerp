@@ -37,15 +37,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export PLATFORM_VERSION="16.1.0"
    	export PLATFORM_SECURITY_PATCH="2099-12-31"
    	export TW_DEFAULT_LANGUAGE="en"
-	export OF_SCREEN_H="2280"
+	export OF_SCREEN_H="2340"
         export OF_STATUS_H="83"
         export OF_STATUS_INDENT_LEFT="52"
         export OF_STATUS_INDENT_RIGHT="52"
 	export OF_HIDE_NOTCH="1"
 	export OF_NO_SPLASH_CHANGE="1"
-	export OF_AB_DEVICE="1"
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
-	#export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1; # if you disable this, then enable the next line
+	export OF_USE_SYSTEM_FINGERPRINT="1"
 	
 	export FOX_USE_NANO_EDITOR="1"
 	export FOX_USE_TAR_BINARY="1"
@@ -66,7 +65,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         # -- add settings for R11 --
         export FOX_R11="1"
         export OF_USE_TWRP_SAR_DETECT="1"
-	export OF_USE_TWRP_SAR_DETECT="1"
         export OF_DISABLE_MIUI_OTA_BY_DEFAULT="1"
         export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
         # -- end R11 settings --
