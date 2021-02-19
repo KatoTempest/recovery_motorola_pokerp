@@ -20,7 +20,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := pokerp
 PRODUCT_NAME := omni_pokerp
-PRODUCT_BRAND := xiaomi
+PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto e(6) plus
 PRODUCT_MANUFACTURER := Motorola
 
