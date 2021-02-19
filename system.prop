@@ -1,0 +1,10 @@
+ro .hadware=mt6762
+ro.board.platform=mt6762v
+service.adb.root=1
+persist.sys.root_access=0
+
+#USB MTP WHQL
+ro.sys.usb.whql.enable=0
+ro.sys.usb.storage.type=mtp,adb
+ro.vold.umsdirtyratio=20
+qemu.hw.mainkeys=1
