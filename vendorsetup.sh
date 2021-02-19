@@ -42,7 +42,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export OF_STATUS_INDENT_LEFT="52"
         export OF_STATUS_INDENT_RIGHT="52"
 	export OF_HIDE_NOTCH="1"
-	export OF_NO_SPLASH_CHANGE="1"
+	#export OF_NO_SPLASH_CHANGE="1"
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
 	export OF_USE_SYSTEM_FINGERPRINT="1"
 	
@@ -53,9 +53,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"
 	export OF_VANILLA_BUILD="1"
 	export OF_DISABLE_UPDATEZIP="1"
+	export OF_FLASHLIGHT_ENABLE="0"
 	
 	#Build type and mantainer info
-	export OF_MAINTAINER="LichtEstarossx"
+	export OF_MAINTAINER="KatoTempest"
         export FOX_BUILD_TYPE="Unofficial"
 
 	# OTA for custom ROMs
