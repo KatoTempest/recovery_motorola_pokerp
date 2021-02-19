@@ -78,18 +78,27 @@ RECOVERY_SDCARD_ON_DATA := true
 # TWRP
 TW_EXTRA_LANGUAGES := true
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := By Kato
+#TW_DEVICE_VERSION :=BY KATO
+#DEVICE_SCREEN_WIDTH := 720
+#DEVICE_SCREEN_HEIGHT := 1560 
 TW_EXCLUDE_SUPERSU := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TW_EXCLUDE_TWRPAPP := true
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TW_INCLUDE_FB2PNG := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
-TW_USE_TOOLBOX := true
-TW_NO_SCREEN_BLANK := true
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+
+
+
+#Stuff
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+
 
 # Workaround for error copying vendor files to recovery ramdisk
 TARGET_COPY_OUT_VENDOR := vendor
@@ -103,3 +112,4 @@ ALLOW_MISSING_DEPENDENCIES := true
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
+
